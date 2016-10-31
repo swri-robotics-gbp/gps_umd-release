@@ -1,0 +1,12 @@
+Source: ros-jade-gps-umd
+Section: misc
+Priority: extra
+Maintainer: Ken Tossell <ken@tossell.net>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin
+Homepage: http://ros.org/wiki/gps_umd
+Standards-Version: 3.9.2
+
+Package: ros-jade-gps-umd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-gps-common, ros-jade-gpsd-client
+Description: gps_umd metapackage
