@@ -1,0 +1,12 @@
+Source: ros-jade-gpsd-client
+Section: misc
+Priority: extra
+Maintainer: Timo Roehling <timo.roehling@fkie.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), libgps-dev, pkg-config, ros-jade-catkin, ros-jade-gps-common, ros-jade-roscpp, ros-jade-sensor-msgs
+Homepage: http://ros.org/wiki/gpsd_client
+Standards-Version: 3.9.2
+
+Package: ros-jade-gpsd-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: connects to a GPSd server and broadcasts GPS fixes using the NavSatFix message
