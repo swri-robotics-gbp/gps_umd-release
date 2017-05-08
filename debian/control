@@ -1,0 +1,12 @@
+Source: ros-kinetic-gps-umd
+Section: misc
+Priority: extra
+Maintainer: Ken Tossell <ken@tossell.net>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/gps_umd
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-gps-umd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-gps-common, ros-kinetic-gpsd-client
+Description: gps_umd metapackage
