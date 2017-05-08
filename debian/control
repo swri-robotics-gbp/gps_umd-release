@@ -1,0 +1,12 @@
+Source: ros-indigo-gpsd-client
+Section: misc
+Priority: extra
+Maintainer: Timo Roehling <timo.roehling@fkie.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), libgps-dev, pkg-config, ros-indigo-catkin, ros-indigo-gps-common, ros-indigo-roscpp, ros-indigo-sensor-msgs
+Homepage: http://ros.org/wiki/gpsd_client
+Standards-Version: 3.9.2
+
+Package: ros-indigo-gpsd-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: connects to a GPSd server and broadcasts GPS fixes using the NavSatFix message
