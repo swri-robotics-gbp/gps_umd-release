@@ -2,6 +2,9 @@
 Changelog for package gpsd_client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.9 (2017-05-08)
+------------------
+
 0.1.8 (2016-10-31)
 ------------------
 * Use pre-processor defines to handle different libgps API versions
