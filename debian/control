@@ -1,0 +1,12 @@
+Source: ros-lunar-gps-umd
+Section: misc
+Priority: extra
+Maintainer: Ken Tossell <ken@tossell.net>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/gps_umd
+Standards-Version: 3.9.2
+
+Package: ros-lunar-gps-umd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-gps-common, ros-lunar-gpsd-client
+Description: gps_umd metapackage
