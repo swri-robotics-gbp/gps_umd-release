@@ -1,0 +1,12 @@
+Source: ros-kinetic-gps-common
+Section: misc
+Priority: extra
+Maintainer: Timo Roehling <timo.roehling@fkie.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-message-filters, ros-kinetic-message-generation, ros-kinetic-nav-msgs, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Homepage: http://ros.org/wiki/gps_common
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-gps-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-message-filters, ros-kinetic-message-runtime, ros-kinetic-nav-msgs, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Description: GPS messages and common routines for use in GPS drivers
