@@ -1,0 +1,12 @@
+Source: ros-indigo-gps-common
+Section: misc
+Priority: extra
+Maintainer: Timo Roehling <timo.roehling@fkie.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-message-filters, ros-indigo-message-generation, ros-indigo-nav-msgs, ros-indigo-roscpp, ros-indigo-rospy, ros-indigo-sensor-msgs, ros-indigo-std-msgs
+Homepage: http://ros.org/wiki/gps_common
+Standards-Version: 3.9.2
+
+Package: ros-indigo-gps-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-message-filters, ros-indigo-message-runtime, ros-indigo-nav-msgs, ros-indigo-roscpp, ros-indigo-rospy, ros-indigo-sensor-msgs, ros-indigo-std-msgs
+Description: GPS messages and common routines for use in GPS drivers
