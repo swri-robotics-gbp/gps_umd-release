@@ -1,3 +1,29 @@
+## gps_umd (indigo) - 0.2.0-1
+
+The packages in the `gps_umd` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo gps_umd` on `Thu, 16 Nov 2017 16:38:09 -0000`
+
+These packages were released:
+- `gps_common`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: https://github.com/swri-robotics-gbp/gps_umd-release.git
+- rosdistro version: `0.1.9-0`
+- old version: `0.2.0-0`
+- new version: `0.2.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## gps_umd (indigo) - 0.2.0-0
 
 The packages in the `gps_umd` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo gps_umd` on `Thu, 16 Nov 2017 16:34:12 -0000`
