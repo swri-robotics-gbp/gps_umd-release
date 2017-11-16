@@ -1,3 +1,29 @@
+## gps_umd (lunar) - 0.2.0-0
+
+The packages in the `gps_umd` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar gps_umd` on `Thu, 16 Nov 2017 16:44:58 -0000`
+
+These packages were released:
+- `gps_common`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: https://github.com/swri-robotics-gbp/gps_umd-release.git
+- rosdistro version: `0.1.9-0`
+- old version: `0.1.9-0`
+- new version: `0.2.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.1`
+- catkin_pkg version: `0.3.9`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## gps_umd (kinetic) - 0.2.0-0
 
 The packages in the `gps_umd` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -r kinetic -t kinetic gps_umd` on `Thu, 16 Nov 2017 16:41:26 -0000`
