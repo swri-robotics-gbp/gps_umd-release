@@ -1,3 +1,29 @@
+## gps_umd (melodic) - 0.2.0-0
+
+The packages in the `gps_umd` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic -t melodic gps_umd` on `Fri, 11 May 2018 13:50:57 -0000`
+
+These packages were released:
+- `gps_common`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.2`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## gps_umd (lunar) - 0.2.0-0
 
 The packages in the `gps_umd` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -r lunar -t lunar gps_umd` on `Thu, 16 Nov 2017 16:44:58 -0000`
