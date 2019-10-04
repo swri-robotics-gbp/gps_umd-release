@@ -1,3 +1,30 @@
+## gps_umd (dashing) - 1.0.0-1
+
+The packages in the `gps_umd` repository were released into the `dashing` distro by running `/usr/bin/bloom-release -r dashing gps_umd` on `Fri, 04 Oct 2019 18:49:14 -0000`
+
+These packages were released:
+- `gps_msgs`
+- `gps_tools`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.16.1`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## gps_umd (melodic) - 0.3.0-1
 
 The packages in the `gps_umd` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -r melodic gps_umd` on `Thu, 03 Oct 2019 14:24:08 -0000`
