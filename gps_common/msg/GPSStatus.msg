@@ -1,4 +1,4 @@
-std_msgs/Header header
+Header header
 
 # Satellites used in solution
 uint16 satellites_used # Number of satellites
