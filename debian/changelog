@@ -1,0 +1,49 @@
+ros-noetic-gps-common (0.3.2-1buster) buster; urgency=high
+
+
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Mon, 25 May 2020 05:00:00 -0000
+
+ros-noetic-gps-common (0.3.1-1buster) buster; urgency=high
+
+
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Thu, 05 Mar 2020 06:00:00 -0000
+
+ros-noetic-gps-common (0.3.0-1buster) buster; urgency=high
+
+  * Switching order of commands to make catkin happy
+  * Initial attempt at creating an offline bag converter
+  * Changing ROS_INFO to ROS_DEBUG_THROTTLE as per #15 <https://github.com/pjreed/gps_umd/issues/15>
+  * Update node name; make appending zone optional; add param for adding zone when going back to navsatfix
+  * Fix altitude, covariance
+  * Add reverse_utm_odometry_node
+  * Contributors: David Anthony, Dheera Venkatraman, P. J. Reed, Tim Clephas, Vikrant Shah, dheera
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Thu, 03 Oct 2019 05:00:00 -0000
+
+ros-noetic-gps-common (0.2.0-1buster) buster; urgency=high
+
+  * fix xml comments
+  * add install instructions and documentation
+  * add node for translating between NavSatFix and GPSFix
+  * Contributors: Andre Volk, P. J. Reed
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Thu, 16 Nov 2017 06:00:00 -0000
+
+ros-noetic-gps-common (0.1.9-1buster) buster; urgency=high
+
+  * removed unused variables
+  * Contributors: Frank Hoeller
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Mon, 08 May 2017 05:00:00 -0000
+
+ros-noetic-gps-common (0.1.8-1buster) buster; urgency=high
+
+  * Fixing orientation in UTM odometry message
+    Before the fix, the orientation in the odometry message was set to x = 1, y = 0, z = 0, w = 0. This corresponds to Euler angles of roll = pi, pitch = 0, yaw = 0. I believe the intent was for the orientation to be the identity, which is x = 0, y = 0, z = 0, w = 1.
+  * Contributors: Tom Moore
+
+ -- Timo Roehling <timo.roehling@fkie.fraunhofer.de>  Mon, 31 Oct 2016 05:00:00 -0000
+
+
