@@ -1,3 +1,29 @@
+## gps_umd (noetic) - 0.3.2-1
+
+The packages in the `gps_umd` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic gps_umd` on `Mon, 25 May 2020 16:51:01 -0000`
+
+These packages were released:
+- `gps_common`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.3.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.1`
+- vcstools version: `0.1.42`
+
+
 ## gps_umd (eloquent) - 1.0.2-1
 
 The packages in the `gps_umd` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release -r eloquent gps_umd` on `Thu, 05 Mar 2020 22:23:20 -0000`
