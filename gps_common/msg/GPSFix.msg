@@ -1,5 +1,5 @@
 # A more complete GPS fix to supplement sensor_msgs/NavSatFix.
-std_msgs/Header header
+Header header
 
 GPSStatus status
 
