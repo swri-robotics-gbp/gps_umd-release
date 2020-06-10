@@ -1,3 +1,30 @@
+## gps_umd (foxy) - 1.0.3-1
+
+The packages in the `gps_umd` repository were released into the `foxy` distro by running `/usr/bin/bloom-release -r foxy gps_umd` on `Wed, 10 Jun 2020 21:12:45 -0000`
+
+These packages were released:
+- `gps_msgs`
+- `gps_tools`
+- `gps_umd`
+- `gpsd_client`
+
+Version of package(s) in repository `gps_umd`:
+
+- upstream repository: https://github.com/swri-robotics/gps_umd.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## gps_umd (noetic) - 0.3.2-1
 
 The packages in the `gps_umd` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic gps_umd` on `Mon, 25 May 2020 16:51:01 -0000`
