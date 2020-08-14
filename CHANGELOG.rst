@@ -2,6 +2,14 @@
 Changelog for package gpsd_client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.4 (2020-08-14)
+------------------
+
+1.0.3 (2020-06-10)
+------------------
+* Foxy support (`#29 <https://github.com/swri-robotics/gps_umd/issues/29>`_)
+* Contributors: P. J. Reed
+
 1.0.2 (2020-03-05)
 ------------------
 * Fix for gpsd-3.19 compatibility (`#26 <https://github.com/swri-robotics/gps_umd/issues/26>`_)
