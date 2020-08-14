@@ -1,1 +1,1 @@
-{"trim": "", "base": "23db28a", "trimbase": "", "parent": "debian/dashing/gpsd_client", "previous": "cd0d749"}
+{"base": "cc50c6c", "parent": "debian/dashing/gpsd_client", "previous": "86df60a", "trim": "", "trimbase": ""}
