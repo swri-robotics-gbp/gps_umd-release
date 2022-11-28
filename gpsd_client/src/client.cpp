@@ -85,8 +85,13 @@ class GPSDClient {
       if (p == NULL)
         return;
 
-      if (!p->online)
+#if GPSD_API_MAJOR_VERSION >= 9
+      if (!p->online.tv_sec && !p->online.tv_nsec) {
+#else
+      if (!p->online) {
+#endif
         return;
+      }
 
       process_data_gps(p);
       process_data_navsat(p);
@@ -143,17 +148,30 @@ class GPSDClient {
 #endif
       }
 
+#if GPSD_API_MAJOR_VERSION >= 10
+      if ((p->fix.status & STATUS_FIX) && !(check_fix_by_variance && std::isnan(p->fix.epx))) {
+#else
       if ((p->status & STATUS_FIX) && !(check_fix_by_variance && std::isnan(p->fix.epx))) {
+#endif
+
         status.status = 0; // FIXME: gpsmm puts its constants in the global
                            // namespace, so `GPSStatus::STATUS_FIX' is illegal.
 
 // STATUS_DGPS_FIX was removed in API version 6 but re-added afterward
 #if GPSD_API_MAJOR_VERSION != 6
+#if GPSD_API_MAJOR_VERSION >= 10
+        if (p->fix.status & STATUS_DGPS_FIX)
+#else
         if (p->status & STATUS_DGPS_FIX)
+#endif
           status.status |= 18; // same here
 #endif
 
+#if GPSD_API_MAJOR_VERSION >= 9
+        fix.time = (double)(p->fix.time.tv_sec) + (double)(p->fix.time.tv_nsec) / 1000000.;
+#else
         fix.time = p->fix.time;
+#endif
         fix.latitude = p->fix.latitude;
         fix.longitude = p->fix.longitude;
         fix.altitude = p->fix.altitude;
@@ -188,7 +206,7 @@ class GPSDClient {
 
         /* TODO: attitude */
       } else {
-      	status.status = -1; // STATUS_NO_FIX
+        status.status = -1; // STATUS_NO_FIX
       }
 
       fix.status = status;
@@ -201,10 +219,17 @@ class GPSDClient {
 
       /* TODO: Support SBAS and other GBAS. */
 
-      if (use_gps_time && !std::isnan(p->fix.time))
+#if GPSD_API_MAJOR_VERSION >= 9
+      if (use_gps_time && (p->online.tv_sec || p->online.tv_nsec)) {
+        fix->header.stamp = ros::Time(p->fix.time.tv_sec, p->fix.time.tv_nsec);
+#else
+      if (use_gps_time && !std::isnan(p->fix.time)) {
         fix->header.stamp = ros::Time(p->fix.time);
-      else
+#endif
+      }
+      else {
         fix->header.stamp = ros::Time::now();
+      }
 
       fix->header.frame_id = frame_id;
 
@@ -212,7 +237,11 @@ class GPSDClient {
        * so we need to use the ROS message's integer values
        * for status.status
        */
+#if GPSD_API_MAJOR_VERSION >= 10
+      switch (p->fix.status) {
+#else
       switch (p->status) {
+#endif
         case STATUS_NO_FIX:
           fix->status.status = -1; // NavSatStatus::STATUS_NO_FIX;
           break;
@@ -238,6 +267,8 @@ class GPSDClient {
        * fake results, which have NaN variance
        */
       if (std::isnan(p->fix.epx) && check_fix_by_variance) {
+        ROS_DEBUG_THROTTLE(1,
+            "GPS status was reported as OK, but variance was invalid");
         return;
       }
 
