@@ -1,1 +1,1 @@
-{"trim": "", "base": "943f453", "trimbase": "", "parent": "debian/noetic/gpsd_client", "previous": "fdb25d7"}
+{"base": "628fc1b", "parent": "debian/noetic/gpsd_client", "previous": "03f7495", "trim": "", "trimbase": ""}
