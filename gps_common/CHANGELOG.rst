@@ -2,6 +2,11 @@
 Changelog for package gps_common
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.3 (2022-11-28)
+------------------
+* Fix truncation warning for UTM zone snprintf() (`#44 <https://github.com/swri-robotics/gps_umd/issues/44>`_)
+* Contributors: Kevin Hallenbeck
+
 0.3.2 (2020-05-25)
 ------------------
 
