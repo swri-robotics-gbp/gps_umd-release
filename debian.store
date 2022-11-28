@@ -1,1 +1,1 @@
-{"trim": "", "base": "f26e29b", "trimbase": "", "parent": "debian/melodic/gpsd_client", "previous": "b3b4a16"}
+{"base": "64ff09b", "parent": "debian/melodic/gpsd_client", "previous": "c32b15a", "trim": "", "trimbase": ""}
