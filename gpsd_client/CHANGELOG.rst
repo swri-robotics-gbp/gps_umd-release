@@ -2,26 +2,74 @@
 Changelog for package gpsd_client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.3.3 (2022-11-28)
+1.0.7 (2023-04-04)
 ------------------
-* Adding better debugging output to help diagnose corner case (`#59 <https://github.com/swri-robotics/gps_umd/issues/59>`_)
-  * Adding better debugging output to help diagnose corner case
-  DISTRIBUTION A. Approved for public release; distribution unlimited. OPSEC `#4584 <https://github.com/swri-robotics/gps_umd/issues/4584>`_
-* Merge pull request `#39 <https://github.com/swri-robotics/gps_umd/issues/39>`_ from shr-project/jansa/gpsd
-  Fix build with gpsd-3.21
-* Fix build with gpsd-3.21
-  Adapt to changes from this commit:
-  https://gitlab.com/gpsd/gpsd/-/commit/29991d6ffeb41ecfc8297db68bb68be0128c8514
-* Contributors: David Anthony, Martin Jansa
+* Fixing Exports (`#73 <https://github.com/swri-robotics/gps_umd/issues/73>`_)
+  * Fixing exported libraries
+* Contributors: David Anthony
 
-0.3.2 (2020-05-25)
+1.0.6 (2022-09-23)
 ------------------
-* Fix build with gpsd 3.20 (`#28 <https://github.com/swri-robotics/gps_umd/issues/28>`_)
+* Fixing Foxy regression (`#67 <https://github.com/swri-robotics/gps_umd/issues/67>`_)
+  Addresses https://github.com/swri-robotics/gps_umd/issues/66
+* Contributors: David Anthony
+
+1.0.5 (2022-08-30)
+------------------
+* Cleaner shutdown after unload
+* Fix build issues with gpsd 3.21 and 3.23
+* Fixing build warnings about deprecated API. DISTRIBUTION A. Approved for public release; distribution unlimited. OPSEC `#4584 <https://github.com/swri-robotics/gps_umd/issues/4584>`_ (`#61 <https://github.com/swri-robotics/gps_umd/issues/61>`_)
+* Adding debug message to help diagnose failures (`#60 <https://github.com/swri-robotics/gps_umd/issues/60>`_)
+* User configurable publish rate (`#58 <https://github.com/swri-robotics/gps_umd/issues/58>`_)
+ * Add demo launch file
+* Fix ros2 component topics (`#46 <https://github.com/swri-robotics/gps_umd/issues/46>`_)
+* Contributors: Dave Mohamad, David Anthony, Philip Cheney
+* Updating changelogs
+* Ros2 devel for GPSD 3.21 and 3.22 (`#65 <https://github.com/danthony06/gps_umd/issues/65>`_)
+  * Better defaults
+  * cleaner shutdown after unload
+  * fix build issues with gpsd 3.21 and 3.23
+  * Revert "fix build issues with gpsd 3.21 and 3.23"
+  This reverts commit eaa7c7870696757d33224a2b969544560552583c.
+  * fix build issues with gpsd 3.21 and 3.23
+  * Revert "Better defaults"
+  This reverts commit c0b66d610128cdcd9855585d8b67055d06e015c8.
+* Fixing build warnings about deprecated API. DISTRIBUTION A. Approved for public release; distribution unlimited. OPSEC `#4584 <https://github.com/danthony06/gps_umd/issues/4584>`_ (`#61 <https://github.com/danthony06/gps_umd/issues/61>`_)
+* Adding debug message to help diagnose failures (`#60 <https://github.com/danthony06/gps_umd/issues/60>`_)
+* ros2-devel: user configurable publish rate (`#58 <https://github.com/danthony06/gps_umd/issues/58>`_)
+  * Add user configurable publish rate
+  * Add demo launch file
+  * declare parameters
+  * Update gpsd_client-launch.py
+  Remove license, use project license
+* Fix ros2 component topics (`#46 <https://github.com/danthony06/gps_umd/issues/46>`_)
+  * Fix ros2 component topics
+  Emit gps/navsat fix messages on timer tick.
+  * Update gpsd_client/src/client.cpp
+  Co-authored-by: Sivert Havso <sivert@havso.net>
+  Co-authored-by: David Anthony <djanthony@gmail.com>
+  Co-authored-by: Sivert Havso <sivert@havso.net>
+* Contributors: Dave Mohamad, David Anthony, Philip Cheney
+
+1.0.4 (2020-08-14)
+------------------
+
+1.0.3 (2020-06-10)
+------------------
+* Foxy support (`#29 <https://github.com/swri-robotics/gps_umd/issues/29>`_)
 * Contributors: P. J. Reed
 
-0.3.1 (2020-03-05)
+1.0.2 (2020-03-05)
 ------------------
 * Fix for gpsd-3.19 compatibility (`#26 <https://github.com/swri-robotics/gps_umd/issues/26>`_)
+* Contributors: P. J. Reed
+
+1.0.1 (2020-03-05)
+------------------
+
+1.0.0 (2019-10-04)
+------------------
+* Support ROS2 (`#24 <https://github.com/pjreed/gps_umd/issues/24>`_)
 * Contributors: P. J. Reed
 
 0.3.0 (2019-10-03)

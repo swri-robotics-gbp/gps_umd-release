@@ -1,6 +1,6 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package gps_umd
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package gps_tools
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1.0.7 (2023-04-04)
 ------------------
@@ -13,14 +13,16 @@ Changelog for package gps_umd
 
 1.0.5 (2022-08-30)
 ------------------
-* Updating changelogs
-* Contributors: David Anthony
+* Fix truncation warning for UTM zone snprintf() (`#45 <https://github.com/swri-robotics/gps_umd/issues/45>`_)
+* Contributors: Kevin Hallenbeck
 
 1.0.4 (2020-08-14)
 ------------------
 
 1.0.3 (2020-06-10)
 ------------------
+* Foxy support (`#29 <https://github.com/swri-robotics/gps_umd/issues/29>`_)
+* Contributors: P. J. Reed
 
 1.0.2 (2020-03-05)
 ------------------
@@ -45,6 +47,8 @@ Changelog for package gps_umd
 0.1.8 (2016-10-31)
 ------------------
 
-0.1.6
------
-* Initial catkin release
+0.1.7 (2014-05-08 01:05:33 -0400)
+---------------------------------
+
+0.1.6 (2013-08-02 09:59)
+------------------------
