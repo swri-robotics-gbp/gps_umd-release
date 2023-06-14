@@ -1,0 +1,12 @@
+Source: ros-noetic-gps-umd
+Section: misc
+Priority: optional
+Maintainer: Ken Tossell <ken@tossell.net>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/gps_umd
+Standards-Version: 3.9.2
+
+Package: ros-noetic-gps-umd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-gps-common, ros-noetic-gpsd-client
+Description: gps_umd metapackage
