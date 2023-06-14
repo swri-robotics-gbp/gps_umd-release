@@ -1,57 +1,39 @@
-cmake_minimum_required(VERSION 3.10)
-project(gpsd_client)
+cmake_minimum_required(VERSION 2.8.3)
+project(gpsd_client CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+############
+## Catkin ##
+############
 
-find_package(ament_cmake REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  gps_common
+  roscpp
+  sensor_msgs
+)
 
-find_package(gps_msgs REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(rclcpp_components REQUIRED)
-find_package(sensor_msgs REQUIRED)
-
-find_package(PkgConfig REQUIRED)
+find_package(PkgConfig)
 pkg_check_modules (libgps REQUIRED libgps)
 
-add_library(${PROJECT_NAME} SHARED
-  src/client.cpp
-)
-target_include_directories(${PROJECT_NAME}
-  PUBLIC
-  ${libgps_INCLUDE_DIRS}
-)
-target_compile_definitions(${PROJECT_NAME}
-  PRIVATE "COMPOSITION_BUILDING_DLL"
-)
-rclcpp_components_register_nodes(${PROJECT_NAME} "gpsd_client::GPSDClientComponent")
-target_link_libraries(${PROJECT_NAME}
-  ${libgps_LIBRARIES}
-)
-ament_target_dependencies(${PROJECT_NAME}
-  "gps_msgs"
-  "rclcpp"
-  "rclcpp_components"
-  "sensor_msgs"
-)
+###################################################
+## Declare things to be passed to other projects ##
+###################################################
+
+catkin_package()
+
+###########
+## Build ##
+###########
+
+include_directories(${catkin_INCLUDE_DIRS} ${libgps_INCLUDE_DIRS})
+add_executable(${PROJECT_NAME} src/client.cpp)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${libgps_LIBRARIES})
 
 #############
 ## Install ##
 #############
 
 install(TARGETS ${PROJECT_NAME}
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-
-install(DIRECTORY launch
-    DESTINATION share/${PROJECT_NAME}/)
-
-install(DIRECTORY config
-    DESTINATION share/${PROJECT_NAME}/)
-
-ament_export_dependencies(ament_cmake)
-ament_export_dependencies(rclcpp)
-ament_export_libraries(${PROJECT_NAME})
-
-ament_package()

@@ -2,36 +2,17 @@
 Changelog for package gps_umd
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.0.7 (2023-04-04)
-------------------
-* Fixing Exports (`#73 <https://github.com/swri-robotics/gps_umd/issues/73>`_)
-  * Fixing exported libraries
-* Contributors: David Anthony
-
-1.0.6 (2022-09-23)
+0.3.4 (2023-06-14)
 ------------------
 
-1.0.5 (2022-08-30)
-------------------
-* Updating changelogs
-* Contributors: David Anthony
-
-1.0.4 (2020-08-14)
+0.3.3 (2022-11-28)
 ------------------
 
-1.0.3 (2020-06-10)
+0.3.2 (2020-05-25)
 ------------------
 
-1.0.2 (2020-03-05)
+0.3.1 (2020-03-05)
 ------------------
-
-1.0.1 (2020-03-05)
-------------------
-
-1.0.0 (2019-10-04)
-------------------
-* Support ROS2 (`#24 <https://github.com/pjreed/gps_umd/issues/24>`_)
-* Contributors: P. J. Reed
 
 0.3.0 (2019-10-03)
 ------------------
